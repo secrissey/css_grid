@@ -2,55 +2,94 @@
     /* Display a grid using this class */
     display: grid;
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
+    background-color: white;
     /* grid-template-rows == gridRows
        grid-template-columns ==gridColumns
     */
     grid-template-rows: 1fr 2fr 2fr 1fr;
     grid-template-columns: 3fr 3fr 2fr;
-    padding: 3px;
     grid-template-areas:
         "headerblock headerblock navbar"
         "content-a   content-b   navbar"
         "content-a   content-b   navbar"
         "footerblock footerblock footerblock";     
 }
-
-div{
-    display: block;
-}
     
 .headerblock{
     grid-area: headerblock;
-    background-color: pink;
+    background-color: lightskyblue;
     text-align: left;
+    margin-block-start: 5px;
+    margin-block-end: 4px;
+    margin-inline-start: opx;
+    margin-inline-end: 16px;
 }
 
 .navbar{
     grid-area: navbar;
-    background-color: paleturquoise;
+    background-color: lightsalmon;
     text-align: left;
+    margin-block-start: 5px;
+    margin-block-end: -20px;
+    margin-inline-start: 0px;
+    margin-inline-end: 40px;
 }
   
 .content-a{
     grid-area: content-a;
-    background-color: blanchedalmond;
+    background-color: lightgreen;
+    margin-block-start: 0.67em;
+    margin-block-end: -1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .content-b{
     grid-area: content-b;
-    background-color: tan;
+    background-color: plum;
+    margin-block-start: 0.67em;
+    margin-block-end: -1.33em;
+    margin-inline-start: 14px;
+    margin-inline-end: 16px;
+
 }
   
 .footerblock{
     grid-area: footerblock;
-    background-color: grey;
+    background-color: orange;
     text-align: left;
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
+    font-size: 1em;
+    margin-block-start: 35px;
+    margin-block-end: 10px;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-end: 40px;
     font-weight: bold;
+}
+
+header{
+    font-size: x-large;
+    font-family: arial;
+    margin-block-start: 30px;
+    margin-block-end: 20px;
+    margin-inline-start: 20px;
+    font-style: bold;
+}
+h1{
+    font-size: large;
+    font-family: arial;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+}
+
+p{
+    font-size: medium;
+    font-family: arial;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+    font-style: italic;
 }
